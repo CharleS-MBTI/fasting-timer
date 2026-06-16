@@ -1,0 +1,37 @@
+
+ RUN  v4.1.9 C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer
+
+stderr | src/__tests__/storage.test.ts > storage 模块 > saveState / loadState > loadState 在 JSON 格式错误时返回 null（不抛异常）
+Failed to load timer state from localStorage: SyntaxError: Unexpected token '这', "这不是合法的 JSON" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at loadState (C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/src/utils/storage.ts:23:34)
+    at C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/src/__tests__/storage.test.ts:50:22
+    at [90mfile:///C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:302:11
+    at [90mfile:///C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:26
+    at [90mfile:///C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2326:20
+    at new Promise (<anonymous>)
+    at runWithCancel [90m(file:///C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2323:10[90m)[39m
+    at [90mfile:///C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2305:20
+    at new Promise (<anonymous>)
+
+stderr | src/__tests__/storage.test.ts > storage 模块 > saveHistory / loadHistory > loadHistory 在 JSON 格式错误时返回空数组（不抛异常）
+Failed to load history from localStorage: SyntaxError: Unexpected token '这', "这不是合法的 JSON" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at loadHistory (C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/src/utils/storage.ts:73:34)
+    at C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/src/__tests__/storage.test.ts:138:22
+    at [90mfile:///C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:302:11
+    at [90mfile:///C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:1903:26
+    at [90mfile:///C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2326:20
+    at new Promise (<anonymous>)
+    at runWithCancel [90m(file:///C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2323:10[90m)[39m
+    at [90mfile:///C:/Users/Administrator/WorkBuddy/2026-06-16-10-48-42/fasting-timer/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-artifact.js:2305:20
+    at new Promise (<anonymous>)
+
+ ✓ src/__tests__/storage.test.ts (22 tests) 24ms
+ ✓ src/__tests__/useFastingTimer.test.ts (52 tests) 2953ms
+
+ Test Files  2 passed (2)
+      Tests  74 passed (74)
+   Start at  11:12:15
+   Duration  5.87s (transform 182ms, setup 0ms, import 649ms, tests 2.98s, environment 4.17s)
+
